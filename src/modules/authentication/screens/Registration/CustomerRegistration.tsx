@@ -1,5 +1,5 @@
 import Select from "@/components/form/select";
-import { Suspense } from "react";
+import { Suspense, useState } from "react";
 import { InformationCircleIcon, EnvelopeIcon, EyeIcon, LockClosedIcon } from '@heroicons/react/20/solid'
 import Link from "next/link";
 import Header from "../../components/header";
@@ -8,7 +8,7 @@ import { items } from "@/constants/registration";
 import PasswordCheck from "@/components/form/PassCheck";
 
 const CustomerRegistration = () => {
-
+    const [selectedTeam, setSelectedTeam] = useState<any>(null);
 
     return <>
         <Suspense fallback={<p>Loading...</p>}>
@@ -77,7 +77,7 @@ const CustomerRegistration = () => {
                                 </div>
 
                                 <div className="col-span-full pb-[24px]">
-                                    <Select items={items} title="" />
+                                    <Select items={items} title="" data={{ selected: selectedTeam, setSelected: setSelectedTeam }} />
                                 </div>
 
                                 <div className="grid grid-cols-1 gap-x-6 gap-y-8 sm:grid-cols-6 pb-[24px]">

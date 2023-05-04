@@ -1,12 +1,16 @@
 import Image from "next/image";
 import Select from "@/components/form/select";
-import { Suspense } from "react";
 import { InformationCircleIcon, EnvelopeIcon, EyeIcon, LockClosedIcon } from '@heroicons/react/20/solid'
 import Link from "next/link";
 import Nav from "../../components/nav";
 import Header from "../../components/header";
+import { Suspense, useEffect, useState } from "react";
 
 const Registration = () => {
+
+    const [selectedTeam, setSelectedTeam] = useState<any>(null);
+    const [selectedCripto, setSelectedCripto] = useState<any>(null);
+
 
     const items = [
         { id: 1, name: 'Escolha seu clube aqui' },
@@ -107,7 +111,7 @@ const Registration = () => {
                                 </div>
 
                                 <div className="col-span-full pb-[24px]">
-                                    <Select items={items} title="" />
+                                    <Select items={items} title="" data={{ selected: selectedTeam, setSelected: setSelectedTeam }} />
                                 </div>
 
                                 <div className="grid grid-cols-1 gap-x-6 gap-y-8 sm:grid-cols-6 pb-[24px]">
@@ -223,7 +227,7 @@ const Registration = () => {
                                 </div>
 
                                 <div className="col-span-full pb-[24px] relative ">
-                                    <Select items={cripto} title="" />
+                                    <Select items={cripto} title="" data={{ selected: selectedCripto, setSelected: setSelectedCripto }} />
 
                                 </div>
 

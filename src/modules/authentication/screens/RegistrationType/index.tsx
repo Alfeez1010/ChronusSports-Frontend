@@ -1,6 +1,6 @@
 import Select from "@/components/form/select";
 
-import { Suspense } from "react";
+import { Suspense, useState  } from "react";
 import RegisterType from "../../components/registerType";
 import Header from "../../components/header";
 import Nav from "../../components/nav";
@@ -22,6 +22,7 @@ const types = [
 ];
 
 const RegistrationType = () => {
+    const [selectedPeriod, setSelectedPeriod] = useState<any>(null);
     return <>
         <div>
             <Header title="REGISTRAR" description="Verifique qual perfil é o seu e realize o cadastro para ter acesso a todas as funções e benefícios do CHRONUS Sports" />
@@ -33,7 +34,7 @@ const RegistrationType = () => {
 
                 <div className="mt-8 pb-10">
                     <Suspense fallback={<p>Loading...</p>}>
-                        <Select title="Período do contrato" />
+                        <Select title="Período do contrato" data={{ selected: selectedPeriod, setSelected: setSelectedPeriod}}/>
                     </Suspense>
 
                 </div>
