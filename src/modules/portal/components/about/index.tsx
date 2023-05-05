@@ -11,7 +11,7 @@ export const About = () => {
             <div className="py-10 w-full max-w-full lg:max-w-[50%]">
               <h2 className="font-[16px] not-italic font-black font-bold text-base leading-[150%] sm:leading-[100%] not-italic font-black sm:text-[58px] leading-[100%] flex items-center tracking-[0.06em] uppercase text-[#EEEEEE] sm:max-w-full sm:flex sm:flex-col sm:items-start">SCOUT <span className="px-3 sm:p-0 text-[#00E4FF]   sm:text-[#EEEEEE] ">COMBINE</span></h2>
               <p className="text-sm md:text-base not-italic font-normal text-base flex items-center text-gray-200 pt-[26px]">Acompanhe o desempenho dos atletas através de estatísticas e análises de desempenho técnicos e táticos. Aproveite para colecionar NFTs dinâmicos repletos destes atributos. Invista e colecione a história. Comece agora, é rápido e fácil.</p>
-              <Link href="/auth/cadastro" className="flex justify-center items-center  max-w-[170px] h-10 md:h-[56px] text-white mt-4 sm:mt-16 md:text-base min-w-[170px] bg-transparent border border-1 border-[#4f25cc] text-gray-light rounded-2xl">
+              <Link href="/auth/cadastro/parceiro" className="flex justify-center items-center  max-w-[170px] h-10 md:h-[56px] text-white mt-4 sm:mt-16 md:text-base min-w-[170px] bg-transparent border border-1 border-[#4f25cc] text-gray-light rounded-2xl">
                 CADASTRE-SE
               </Link>
             </div>
