@@ -124,7 +124,7 @@ const navigation = [
     },
     {
         name: 'Home',
-        href: '#'
+        href: '/home'
     },
     {
         name: 'MKT Place',
@@ -182,9 +182,9 @@ const Header = () => {
                             <Popover.Group className={`${styles.container}`}>
 
                                 <div className='hidden xl:flex '>
-                                    <a href="#" className="not-italic font-normal text-base leading-[150%] flex items-center text-left text-white xl:px-[14px]">
+                                    <Link href="/home" className="not-italic font-normal text-base leading-[150%] flex items-center text-left text-white xl:px-[14px]">
                                         Home
-                                    </a>                      
+                                    </Link>                      
 
                                     <div className="not-italic font-normal text-base leading-[150%] flex items-center text-center text-white xl:px-[14px]"><Solutions></Solutions></div>
                                     <div className="not-italic font-normal text-base leading-[150%] flex items-center text-center text-white xl:px-[14px]"><Institucional></Institucional></div>
