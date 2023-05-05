@@ -42,15 +42,15 @@ const Launch = () => {
     })
 
     return (
-        <div className="sm:pt-[119px] bg-[url(/assets/images/artLaunchLayer.png)]">
+        <div className="sm:pt-[40px] bg-[url(/assets/images/artLaunchLayer.png)]">
             <div className="mx-auto max-w-9xl lg:px-8 relative sm:px-0  bg-[50%] bg-no-repeat flex items-center justify-center gap-5 flex-col" >
                 <div className="relative isolate overflow-hidden sm:rounded-3xl">
-                    <h2 className="font-black text-base flex  text-center sm:text-start justify-center leading-[150%] mb-0 pt-16  sm:pt-0 sm:text-[58px] tracking-[0.06em] uppercase text-[#EEEEEE] sm:mb-[32px]">
+                    <h2 className="font-black text-base flex  text-center sm:text-start justify-center leading-[150%] mb-0 pt-16  sm:pt-0 sm:text-[58px] tracking-[0.06em] uppercase text-[#EEEEEE]">
                         LANÇAMENTOS
                     </h2>
                 </div>
 
-                <div className="w-[100%] justify-center flex items-center m-auto pb-0 px-0">
+                <div className="w-[100%] justify-center flex items-center m-auto pb-0 px-0 max-h-[780px]">
                     <div className="flex justify-end items-center flex-row absolute w-4/5 z-[9]">
                         <button className="cursor-pointer absolute p-1.5 border-[unset] left-0">
                             <Image
@@ -69,24 +69,24 @@ const Launch = () => {
                             onMouseEnter={handleShowTitle}
                             onMouseLeave={handleHideTitle}
                             className="flex  cursor-pointer flex-col items-center justify-center min-h-[380] sm:min-h-[798px] min-w-[280px] sm:min-w-[606px] mr-[-50px] sm:mr-[-150px] transition-[0.7s] hover:transition-[0.7s] hover:scale-[1.2]" >
-                            <Image src="/assets/images/nft_home_chico.svg" height={798} width={606} alt="" className="object-contain cursor-pointer " />
-                            <h3 className="leading-[64px] block absolute sm:min-w-[70%] hidden text-[25px] leading-[normal] sm:text-[68px] text-white uppercase bottom-[75px] uppercase  flex flex-col ml-[-25px] sm:ml-[-110px] font-bold" >Chico <span className="text-end text-[#FFD849]">Barreto</span></h3>
+                            <Image src="/assets/images/Chico.svg" height={700} width={531} alt="" className="object-contain cursor-pointer " />
+                            <h3 className="leading-[64px] block absolute sm:min-w-[60%] hidden text-[25px] leading-[normal] sm:text-[60px] text-white uppercase bottom-[75px] uppercase  flex flex-col ml-[-25px] sm:ml-[-110px] font-bold" >Chico <span className="text-end text-[#FFD849]">Barreto</span></h3>
                         </div>
 
                         <div className="flex  cursor-pointer flex-col items-center justify-center min-h-[380] sm:min-h-[798px] min-w-[280px] sm:min-w-[606px] mr-[-50px] sm:mr-[-150px] transition-[0.7s] hover:transition-[0.7s] hover:scale-[1.2]"
                             onMouseEnter={handleShowTitle}
                             onMouseLeave={handleHideTitle}
                         >
-                            <Image src="/assets/images/nft_home_dalila.svg" height={798} width={606} alt="" className="cursor-pointer" />
-                            <h3 className="leading-[64px] block absolute hidden sm:min-w-[70%] text-[25px] leading-[normal] sm:text-[68px] text-white uppercase bottom-[75px] uppercase  flex flex-col ml-[-25px] sm:ml-[-110px] font-bold" >Dalila <span className="text-end text-[#FFD849]">Bulcão</span></h3>
+                            <Image src="/assets/images/Dalila.svg" height={700} width={531} alt="" className="cursor-pointer" />
+                            <h3 className="leading-[64px] block absolute hidden sm:min-w-[60%] text-[25px] leading-[normal] sm:text-[60px] text-white uppercase bottom-[75px] uppercase  flex flex-col ml-[-25px] sm:ml-[-110px] font-bold" >Dalila <span className="text-end text-[#FFD849]">Bulcão</span></h3>
                         </div>
 
                         <div
                             onMouseEnter={handleShowTitle}
                             onMouseLeave={handleHideTitle}
                             className="flex relative cursor-pointer flex-col items-center justify-center min-h-[380] sm:min-h-[798px] min-w-[280px] sm:min-w-[606px] mr-[-50px] sm:mr-[-150px] transition-[0.7s] hover:transition-[0.7s] hover:scale-[1.2]" >
-                            <Image src="/assets/images/nft_home_guido.svg" height={798} width={606} alt="" className="cursor-pointer " />
-                            <h3 className="leading-[64px] block absolute hidden sm:min-w-[70%] text-[25px] leading-[normal] sm:text-[68px] text-white uppercase bottom-[75px] uppercase  flex flex-col ml-[-25px] sm:ml-[-110px] font-bold" >Guilherme <span className="text-end text-[#FFD849]">Guido</span></h3>
+                            <Image src="/assets/images/Guido.svg" height={700} width={531} alt="" className="cursor-pointer " />
+                            <h3 className="leading-[64px] block absolute hidden sm:min-w-[60%] text-[25px] leading-[normal] sm:text-[60px] text-white uppercase bottom-[75px] uppercase  flex flex-col ml-[-25px] sm:ml-[-110px] font-bold" >Guilherme <span className="text-end text-[#FFD849]">Guido</span></h3>
                         </div>
 
                         <div
@@ -94,16 +94,16 @@ const Launch = () => {
                             onMouseLeave={handleHideTitle}
 
                             className="flex flex-col relative items-center justify-center min-h-[380] sm:min-h-[798px] min-w-[280px] sm:min-w-[606px] mr-[-50px] sm:mr-[-150px] transition-[0.7s] hover:transition-[0.7s] hover:scale-[1.2]" >
-                            <Image src="/assets/images/nft_home_macaba.svg" height={798} width={606} alt="" className="cursor-pointer " />
-                            <h3 className="leading-[64px] block absolute hidden sm:min-w-[70%] text-[25px] leading-[normal] sm:text-[68px] text-white uppercase bottom-[75px] uppercase  flex flex-col ml-[-25px] sm:ml-[-110px] font-bold" >Jhonson <span className="text-end text-[#FFD849]">Macaba</span></h3>
+                            <Image src="/assets/images/Macaba.svg" height={700} width={531} alt="" className="cursor-pointer " />
+                            <h3 className="leading-[64px] block absolute hidden sm:min-w-[60%] text-[25px] leading-[normal] sm:text-[60px] text-white uppercase bottom-[75px] uppercase  flex flex-col ml-[-25px] sm:ml-[-110px] font-bold" >Jhonson <span className="text-end text-[#FFD849]">Macaba</span></h3>
                         </div>
 
                         <div
                             onMouseEnter={handleShowTitle}
                             onMouseLeave={handleHideTitle}
                             className="flex flex-col relative items-center justify-center min-h-[380] sm:min-h-[798px] min-w-[280px] sm:min-w-[606px] mr-[-50px] sm:mr-[-150px] transition-[0.7s] hover:transition-[0.7s] hover:scale-[1.2]" >
-                            <Image src="/assets/images/nft_home_marta.svg" height={798} width={606} alt="" className="cursor-pointer " />
-                            <h3 className="leading-[64px] block absolute hidden text-[25px] leading-[normal] sm:text-[68px]  sm:min-w-[70%] text-white uppercase bottom-[75px] uppercase  flex flex-col ml-[-25px] sm:ml-[-110px] font-bold" >Marta <span className="text-end text-[#FFD849]">Sobral</span></h3>
+                            <Image src="/assets/images/Marta.svg" height={700} width={531} alt="" className="cursor-pointer " />
+                            <h3 className="leading-[64px] block absolute hidden text-[25px] leading-[normal] sm:text-[60px]  sm:min-w-[60%] text-white uppercase bottom-[75px] uppercase  flex flex-col ml-[-25px] sm:ml-[-110px] font-bold" >Marta <span className="text-end text-[#FFD849]">Sobral</span></h3>
                         </div>
 
                         <div
@@ -111,16 +111,16 @@ const Launch = () => {
                             onMouseLeave={handleHideTitle}
 
                             className="flex flex-col relative items-center justify-center min-h-[380] sm:min-h-[798px] min-w-[280px] sm:min-w-[606px] mr-[-50px] sm:mr-[-150px] transition-[0.7s] hover:transition-[0.7s] hover:scale-[1.2]" >
-                            <Image src="/assets/images/nft_home_moser.svg" height={798} width={606} alt="" className="cursor-pointer " />
-                            <h3 className="leading-[64px] block absolute hidden text-[25px] leading-[normal] sm:text-[68px]   sm:min-w-[70%] text-white uppercase bottom-[75px] uppercase  flex flex-col ml-[-25px] sm:ml-[-110px] font-bold" >Ana <span className="text-end text-[#FFD849]">Moser</span></h3>
+                            <Image src="/assets/images/Moser.svg" height={700} width={531} alt="" className="cursor-pointer " />
+                            <h3 className="leading-[64px] block absolute hidden text-[25px] leading-[normal] sm:text-[60px]   sm:min-w-[60%] text-white uppercase bottom-[75px] uppercase  flex flex-col ml-[-25px] sm:ml-[-110px] font-bold" >Ana <span className="text-end text-[#FFD849]">Moser</span></h3>
                         </div>
 
                         <div
                             onMouseEnter={handleShowTitle}
                             onMouseLeave={handleHideTitle}
                             className="flex flex-col relative items-center justify-center min-h-[380] sm:min-h-[798px] min-w-[280px] sm:min-w-[606px] mr-[-50px] sm:mr-[-150px] transition-[0.7s] hover:transition-[0.7s] hover:scale-[1.2]" >
-                            <Image src="/assets/images/nft_home_rolando.svg" height={798} width={606} alt="" className="cursor-pointer " />
-                            <h3 className="leading-[64px] block absolute hidden text-[25px] leading-[normal] sm:text-[68px] sm:min-w-[70%]  text-white uppercase bottom-[75px] uppercase  flex flex-col ml-[-25px] sm:ml-[-110px] font-bold" >Roland <span className="text-end text-[#FFD849]">Ferreira</span></h3>
+                            <Image src="/assets/images/Rolando.svg" height={700} width={531} alt="" className="cursor-pointer " />
+                            <h3 className="leading-[64px] block absolute hidden text-[25px] leading-[normal] sm:text-[60px] sm:min-w-[60%]  text-white uppercase bottom-[75px] uppercase  flex flex-col ml-[-25px] sm:ml-[-110px] font-bold" >Roland <span className="text-end text-[#FFD849]">Ferreira</span></h3>
                         </div>
 
                         <div
@@ -129,8 +129,8 @@ const Launch = () => {
                             onMouseLeave={handleHideTitle}
 
                             className="flex flex-col relative items-center justify-center min-h-[380] sm:min-h-[798px] min-w-[280px] sm:min-w-[606px] mr-[-50px] sm:mr-[-150px] transition-[0.7s] hover:transition-[0.7s] hover:scale-[1.2]" >
-                            <Image src="/assets/images/nft_home_xando.svg" height={798} width={606} alt="" className="cursor-pointer " />
-                            <h3 className="block absolute hidden text-[25px] leading-[normal] sm:text-[68px] text-white uppercase bottom-[75px] uppercase  flex flex-col ml-[-25px] sm:ml-[-110px] font-bold" >Xandó <span className="text-end text-[#FFD849]"></span></h3>
+                            <Image src="/assets/images/Xando.svg" height={700} width={531} alt="" className="cursor-pointer " />
+                            <h3 className="block absolute hidden text-[25px] leading-[normal] sm:text-[60px] text-white uppercase bottom-[75px] uppercase  flex flex-col ml-[-25px] sm:ml-[-110px] font-bold" >Xandó <span className="text-end text-[#FFD849]"></span></h3>
                         </div>
                     </div>
                 </div>
