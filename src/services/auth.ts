@@ -1,15 +1,17 @@
 import { AthleteUser, Auth, ClubUser, CustomerUser, NewPassword, RecoveryPassword } from '@/types/user';
 import { Toast } from '@/utils/toast';
 
+const API = "https://api.easysports.click";
+
 async function signup(data: CustomerUser | AthleteUser | ClubUser, path: string): Promise<any> {
-    const response = await fetch("https://api.easysports.click" + path, {
+    const response = await fetch(API + path, {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
         },
         body: JSON.stringify(data)
     });
-    if (response.status !== 200) {
+    if (!response.ok) {
         const json = await response.json();
         if (json?.erros) {
 
@@ -24,15 +26,13 @@ async function signup(data: CustomerUser | AthleteUser | ClubUser, path: string)
         throw new Error('Erro ao cadastrar usuário.');
     }
 
-    if (response.ok) {
-        return response.text();
-    }
+    return response.text();
 
 }
 
 async function signin(data: Auth | RecoveryPassword | NewPassword, path: string, method?: string): Promise<any> {
     try {
-        const response = await fetch("https://chronussportswebapi-dev.eba-ssacuemn.us-east-1.elasticbeanstalk.com" + path, {
+        const response = await fetch(API + path, {
             method: method || 'POST',
             headers: {
                 'Content-Type': 'application/json'
@@ -72,7 +72,7 @@ async function signin(data: Auth | RecoveryPassword | NewPassword, path: string,
 
 async function newPassword(data: Auth | RecoveryPassword | NewPassword, path: string, method?: string): Promise<any> {
     try {
-        const response = await fetch("https://chronussportswebapi-dev.eba-ssacuemn.us-east-1.elasticbeanstalk.com" + path, {
+        const response = await fetch(API + path, {
             method: method || 'POST',
             headers: {
                 'Content-Type': 'application/json'

@@ -1,7 +1,20 @@
 import Image from "next/image";
-import React, { MutableRefObject } from "react";
+import React, { FC, MutableRefObject } from "react";
+
+
+interface PartnersProps {
+    children?: React.ReactNode;
+}
+
+interface CustomJSXElements extends JSX.IntrinsicElements {
+    Image: React.DetailedHTMLProps<
+      React.ImgHTMLAttributes<HTMLImageElement>,
+      HTMLImageElement
+    >;
+}
 
 const Partners = ({ children }: any) => {
+    
     const carrosel: MutableRefObject<HTMLUListElement | null | any | undefined> =
         React.useRef();
 

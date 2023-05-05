@@ -132,3 +132,20 @@
 .logout svg {
     margin-right: 8px;
 }
+
+.container{
+    display: flex;
+    justify-content: space-between;
+    width: 50vw;
+}
+
+.container_right{
+    display: flex;
+}
+
+
+.main{
+    display: flex;
+    justify-content: space-between;
+}
+
