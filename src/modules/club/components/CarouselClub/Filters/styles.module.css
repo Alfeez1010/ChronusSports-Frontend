@@ -1,0 +1,45 @@
+.menu{
+    width: 20vw;
+    max-height: 30vh;
+
+    overflow: auto;
+
+    white-space: nowrap;
+    z-index: 2;
+    background-color: rgb(19, 23, 64);
+    color: white;
+    cursor: pointer;
+}
+
+.menu::-webkit-scrollbar{
+    background-color: rgb(19, 23, 64);
+    width: 7px;
+}
+
+.menu::-webkit-scrollbar-thumb {
+    background-color: white;
+    border-radius: 20px;
+}
+
+.hover{
+    background-color: #164092;
+}
+
+.button{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: inherit;
+    border: 1px solid #164092;
+    border-radius: 16px;
+    padding: 8px 16px;
+
+    width: 170px;
+    height: 48px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+}
