@@ -7,7 +7,7 @@ const Footer = () => {
     
     return <>
         <footer className="px-5 w-full flex text-white items-start justify-between flex-col flex-wrap z-10 py-[38px]">
-            {pathname === '/auth/cadastro' ?   (       
+            {pathname === '/auth/cadastro/parceiro' ?   (       
                 <>   
             <div className="font-normal text-xs underline">
                 <Link href="/" className="text-[#00E4FF] leading-5">Acesse a minuta do contrato.</Link>
