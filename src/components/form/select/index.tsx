@@ -10,7 +10,7 @@ const itemsDefault = [
   { id: 4, name: '5 anos - Percentual de 70% sobre a receita' },
 ]
 
-const Select = ({ items = itemsDefault, title, data, errors }: { errors?: any, items?: { id: number, name: string, message?: string }[], title: string, data?: { selected: string, setSelected: any } | any }) => {
+const Select = ({ items = itemsDefault, title, data, errors }: { errors?: any, items?: { id: number, name: string, message?: string }[], title?: string, data?: { selected: string, setSelected: any } | any }) => {
 
   const { selected, setSelected } = data;
 

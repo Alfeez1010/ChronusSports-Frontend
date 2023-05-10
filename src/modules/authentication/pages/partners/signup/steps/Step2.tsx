@@ -127,7 +127,7 @@ const Step2 = ({ data }: {
             phone: phoneFormat(data.tel),
             document: data.documentId.replace(/\D/g, ""),
             address: {
-                zipCode: data.postalCode,
+                postalCode: data.postalCode,
                 street: data.address,
                 number: data.number,
                 complement: data.complement || null,

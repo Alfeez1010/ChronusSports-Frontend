@@ -100,7 +100,7 @@ const Step3Athlete = ({ data }: { data: any }) => {
                 phone: phoneFormat(data.tel),
                 document: data.documentCompanyId.replace(/\D/g, ""),
                 address: {
-                    zipCode: data.postalCode,
+                    postalCode: data.postalCode,
                     street: data.address,
                     number: data.number,
                     complement: data.complement || null,
@@ -136,7 +136,7 @@ const Step3Athlete = ({ data }: { data: any }) => {
             gender: selectedGender.name,
             contractPeriod: data.period.name,
             address: {
-                zipCode: data.postalCode,
+                postalCode: data.postalCode,
                 street: data.address,
                 number: data.number,
                 complement: data.complement || null,

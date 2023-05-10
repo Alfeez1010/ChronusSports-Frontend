@@ -77,7 +77,7 @@ const navigation = {
 
 const PainelDeControle = () => {
     return (
-        <div>
+        <>
             <s.Container>
                 <s.Perfil>
                 {navigation.user.map((item) => (
@@ -141,7 +141,7 @@ const PainelDeControle = () => {
                     </Box>
                 ))}
             </s.SessionMyTeam>
-        </div>
+        </>
     )
 }
 export default PainelDeControle;

@@ -31,62 +31,100 @@ export interface CustomerUser {
 
 
 export interface AthleteUser {
-    email: string;
-    password: string;
-    firstName: string;
-    lastName: string;
-    phone: string;
-    document: string;
-    address: Address;
+    userType: number;
+    clubId: string;
+    type: number;
+    activity: number;
     birthday: string;
-    cryptoWallet?: any;
-    legalGuardian?: {
+    playingField: string;
+    primaryEmail: string;
+    firstName: string;
+    gender: number;
+    primaryDocument: string;
+    address: Address;
+    nationality: string;
+    phone: string;
+    hasCryptoWallet: boolean;
+    legalGuardian: {
         email: string;
-        name: string;
-        phone: string;
-        cpf: string;
+        firstName: string;
+        lastName: string;
+        gender: string;
+        document: string;
     }
+    companyName: string;
+    registrationNumber: string;
+    contract: {
+        description: string;
+        expiration: string;
+        value: number;
+        contact: string
+    };
+    password: string;
+    secondaryEmail: string;
+    lastName: string;
+    secondaryDocument: string;
 }
 
 export interface ClubUser {
-    email: string;
-    companyName?: string;
-    stateRegistration?: string;
-    hasCryptoWallet: boolean;
-    password: string;
+    userType: number;
+    primaryEmail: string;
     firstName: string;
-    lastName: string;
-    phone: string;
-    document: string;
+    gender: number;
+    primaryDocument: string;
     address: Address;
-    birthday: string;
-    cryptoWallet?: any;
+    nationality: string;
+    phone: string;
+    hasCryptoWallet: boolean;
     legalGuardian: {
         email: string;
-        name: string;
-        phone: string;
-        document: string;
+        firstName: string;
+        lastName: string;
         gender: string;
+        document: string;
     }
+    companyName: string;
+    registrationNumber: string;
+    contract: {
+        description: string;
+        expiration: string;
+        value: number;
+        contact: string
+    };
+    password: string;
+    secondaryEmail: string;
+    lastName: string;
+    secondaryDocument: string;
 }
 
 export interface FederationUser {
-    email: string;
-    password: string;
-    firstName: string;
-    lastName: string;
-    phone: string;
-    document: string;
+    userType: number;
+    primaryEmail: string;
+    name: string;
+    gender: number;
+    primaryDocument: string;
     address: Address;
-    birthday: string;
-    cryptoWallet?: any;
+    nationality: string;
+    phone: string;
+    hasCryptoWallet: boolean;
     legalGuardian: {
         email: string;
-        name: string;
-        phone: string;
-        document: string;
+        firstName: string;
+        lastName: string;
         gender: string;
+        document: string;
     }
+    companyName: string;
+    registrationNumber: string;
+    contract: {
+        description: string;
+        expiration: string;
+        value: number;
+        contact: string
+    };
+    password: string;
+    secondaryEmail: string;
+    secondaryDocument: string;
 }
 
 export interface ForgotPassword {

@@ -1,7 +1,7 @@
 import { AthleteUser, Auth, ClubUser, CustomerUser, NewPassword, RecoveryPassword } from '@/types/user';
 import { Toast } from '@/utils/toast';
 
-const API = "https://api.easysports.click";
+const API = "http://api.chronussports-dev.com/";
 
 async function signup(data: CustomerUser | AthleteUser | ClubUser, path: string): Promise<any> {
     const response = await fetch(API + path, {
@@ -118,9 +118,9 @@ async function newPassword(data: Auth | RecoveryPassword | NewPassword, path: st
 export const AuthService = {
     signup: {
         customer: async (data: CustomerUser) => await signup(data, '/users/customer'),
-        athlete: async (data: AthleteUser) => await signup(data, '/users/athlete'),
-        club: async (data: ClubUser) => await signup(data, '/users/club'),
-        federation: async (data: ClubUser) => await signup(data, '/users/federation')
+        athlete: async (data: AthleteUser) => await signup(data, '/athleteUsers'),
+        club: async (data: ClubUser) => await signup(data, '/clubUsers'),
+        federation: async (data: ClubUser) => await signup(data, '/federationUsers')
     },
     signin: async (data: Auth) => await signin(data, '/auth/signin'),
     recoveryPassword: async (data: RecoveryPassword) => await signin(data, '/users/forgotPassword', 'PATCH'),
