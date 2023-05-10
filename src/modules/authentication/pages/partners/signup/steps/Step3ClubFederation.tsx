@@ -406,7 +406,7 @@ const Step3ClubFederation = ({ data }: { data: any }) => {
                                                 <div>
                                                     <h2 className="not-italic font-normal text-base leading-[150%] text-[#EEEEEE] pb-7">Responsável Legal</h2>
                                                     <div className="child col-span-full pb-[24px] ">
-                                                        <Select items={typesOfNationality} id="legalGuardian.nationality" data={{ selected: selectedNationality, setSelected: setSelectedNationality }} />
+                                                        <Select items={typesOfNationality}  data={{ selected: selectedNationality, setSelected: setSelectedNationality }} />
                                                     </div>
                                                     <div className="col-span-full pb-[24px]">
                                                         <label htmlFor="legalGuardian.name" className="hidden block text-sm font-medium leading-6 text-gray-900">

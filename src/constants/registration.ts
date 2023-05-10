@@ -1,11 +1,14 @@
 export const typesOfNationality = [
     {
+        id: 0,
         name: "Selecione sua nacionalidade",
     },
     {
+        id: 1,
         name: "Brasileiro",
     },
     {
+        id: 2,
         name: "Estrangeiro",
     },
 ];
