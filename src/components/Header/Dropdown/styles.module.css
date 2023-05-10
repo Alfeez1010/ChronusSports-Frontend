@@ -1,0 +1,20 @@
+.menu{
+    background-color: #131740;
+    width: fit-content;
+    white-space: nowrap;
+    z-index: 1;
+}
+
+.active{
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+    color: #A3A3A3;
+}
+
+.inactive{
+    color: #3F3F3F;
+    cursor: default;
+}

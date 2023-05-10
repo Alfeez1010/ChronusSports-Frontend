@@ -4,7 +4,7 @@ const Resource = () => {
 
     return <>
         <section className="bg-[#0D0035] relative">
-            <div className="container mx-auto px-4 sm:px-6 lg:px-8 mx-auto max-w-7xl lg:pt-32 flex flex-col">
+            <div className="container mx-auto px-4 sm:px-6 lg:px-8 mx-auto max-w-7xl lg:pt-24 flex flex-col">
                 <h2 className="font-black text-base flex  text-center sm:text-start justify-center sm:justify-start leading-[150%] mb-0 pt-16  sm:pt-0 sm:text-[58px] tracking-[0.06em] uppercase text-[#EEEEEE] sm:mb-[64px]">Recursos</h2>
                 <div className="flex  justify-center items-center lg:items-start lg:justify-between flex-row-reverse lg:flex-row flex-wrap flex-col-reverse">
                     <ul className="py-10 sm:py-0 w-full max-w-full lg:max-w-[50%]">

@@ -1,0 +1,150 @@
+
+.section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 80%;
+    width: 80%;
+    background-image: linear-gradient(to bottom, rgba(84, 140, 251, 0.3), rgba(117, 151, 219, 0.3));
+    background-color: linear-gradient(80.65deg, rgb(84, 140, 251) 60%, rgba(117, 151, 219, 0.6) 100.74%);
+    background-blend-mode: overlay;
+    border-radius: 16px; 
+}
+
+.button{
+   background-color: #164092;
+   border-radius: 16px;
+   width: 130px;
+   padding: 8px 16px;
+   color: white;
+}
+
+.slider { 
+  width: 79vw;
+}
+
+.swiper_container {
+  max-width: 100%;
+}
+
+.image{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 12px;
+  height: 60vh;
+}
+
+.noclubs{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80%;
+  width: 100%;
+}
+
+.noclubs h1{
+  font-family: 'Outfit';
+  font-style: normal;
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 116%;
+  color: white;
+  text-align: center;
+  width: 60%;
+  text-transform: uppercase;
+}
+
+
+.image_active p{
+  font-family: 'Outfit';
+  font-style: normal;
+  font-weight: 900;
+  font-size: 28px;
+  line-height: 116%;
+  color: white;
+  text-align: center;
+  width: 280px;
+  text-transform: uppercase;
+  margin-bottom: -40px;
+}
+
+.caption_off {
+  display: none;
+}
+
+
+.image_active::before{
+  content: "";
+  position: absolute;
+  left: 110px;
+  top: 400px;
+  z-index: -1;
+  box-shadow: 0px 0px 90px 120px rgba(7, 116, 156, 0.60);
+}
+
+.dropdown{
+  display: flex;
+  justify-content: center;
+  align-self: flex-start;
+  position: relative;
+  width: 100%;
+  top: -20px;
+  gap: 25px;
+}
+
+.controllers{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    top: -18rem;
+    width: 100%;
+    padding: 0px 40px;
+    z-index: 2;
+    
+}
+
+.custom-swiper-button-prev,
+.custom-swiper-button-next {
+  color: #fff;
+  cursor: pointer;
+}
+
+.custom-swiper-button-prev:before,
+.custom-swiper-button-next:before {
+  font-size: 20px;
+  line-height: 1;
+  display: block;
+  transform: translateY(-50%);
+}
+
+.menu_mobile{
+  display: none;
+}
+
+
+@media screen and (max-width: 1150px) {
+  .menu_mobile {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 1150px) {
+  .dropdown {
+    display: none;
+  }
+}

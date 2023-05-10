@@ -1,4 +1,5 @@
 import '@/styles/globals.css'
+import '@/styles/styles.css'
 import type { AppProps } from 'next/app'
 import Head from 'next/head'
 import { ToastContainer, toast } from 'react-toastify';
