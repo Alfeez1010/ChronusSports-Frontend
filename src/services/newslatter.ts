@@ -2,7 +2,7 @@ import { Toast } from '@/utils/toast';
 
 async function newsletter(data: {email: string}, path: string): Promise<any> {
     try {
-        const response = await fetch("https://api.easysports.click" + path, {
+        const response = await fetch("http://api.chronussports-dev.com/" + path, {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
