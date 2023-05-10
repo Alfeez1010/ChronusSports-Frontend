@@ -1,6 +1,6 @@
 import Alert from "@/components/Alert";
 import Select from "@/components/form/select";
-import { typePeriod, typesOfPeriod } from "@/constants/registration";
+import { typePeriod, typesOfPeriod, typesOfNationality } from "@/constants/registration";
 import { Header, Nav, RegisterType } from "@/modules/authentication/components";
 import { motion } from "framer-motion";
 
@@ -10,6 +10,7 @@ import { toast } from 'react-toastify';
 
 const Step1 = ({ data }: { data: any }) => {
     const { period, setPeriod } = data;
+    const [selectedNationality, setSelectedNationality] = useState<any>(null);
     const [isOpenAlert, setIsOpenAlert] = useState(false);
 
     const handleChange = (value: string) => {
@@ -48,6 +49,21 @@ const Step1 = ({ data }: { data: any }) => {
             return;
         }
 
+        if (!selectedNationality && data.registrationData.registerType !== "ATLETA" || selectedNationality?.id === 0 && data.registrationData.registerType !== "ATLETA") {
+            toast.error("Escolha a sua nacionalidade.", {
+                position: "top-right",
+                autoClose: 5000,
+                hideProgressBar: false,
+                closeOnClick: true,
+                pauseOnHover: true,
+                draggable: true,
+                progress: undefined,
+                theme: "colored",
+                className: ''
+            });
+
+            return;
+        }
 
         data.handleNext()
 
@@ -84,6 +100,9 @@ const Step1 = ({ data }: { data: any }) => {
                 <motion.div layout className="parent">
                     {data.registrationData.registerType == "FEDERAÇÃO" && <>
                         <div className="child col-span-full pb-[24px] pt-[30px]">
+                            <Select items={typesOfNationality}  title="Qual a sua nacionalidade? *" data={{ selected: selectedNationality, setSelected: setSelectedNationality }} />
+                        </div>
+                        <div className="child col-span-full pb-[24px] pt-[30px]">
                             <Select items={typePeriod} key="typePeriod" title="Período do contrato" data={{ selected: period, setSelected: setPeriod }} />
                         </div>
                     </>}
@@ -91,6 +110,9 @@ const Step1 = ({ data }: { data: any }) => {
 
                 <motion.div layout className="parent">
                     {data.registrationData.registerType == "CLUBE" && <>
+                        <div className="child col-span-full pb-[24px] pt-[30px]">
+                            <Select items={typesOfNationality}  title="Qual a sua nacionalidade? *" data={{ selected: selectedNationality, setSelected: setSelectedNationality }} />
+                        </div>
                         <div className="child col-span-full pb-[24px] pt-[30px]">
                             <Select items={typePeriod} key="typePeriod" title="Período do contrato" data={{ selected: period, setSelected: setPeriod }} />
                         </div>

@@ -1,13 +1,28 @@
+export const typesOfNationality = [
+    {
+        name: "Selecione sua nacionalidade",
+    },
+    {
+        name: "Brasileiro",
+    },
+    {
+        name: "Estrangeiro",
+    },
+];
+
 export const typesOfPeriod = [
     {
+        id: 1,
         name: "FEDERAÇÃO",
         image: "/assets/images/icoAuthRegisterFederation.svg",
         imageActive: "/assets/images/icoAuthRegisterFederationHover.svg"
     }, {
+        id: 2,
         name: "ATLETA",
         image: "/assets/images/icoAuthRegisterDefault.svg",
         imageActive: "/assets/images/icoAuthRegisterDefaultHover.svg"
     }, {
+        id: 3,
         name: "CLUBE",
         image: "/assets/images/icoAuthRegisterClub.svg",
         imageActive: "/assets/images/icoAuthRegisterClubHover.svg"

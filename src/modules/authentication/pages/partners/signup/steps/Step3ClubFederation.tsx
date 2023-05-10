@@ -8,7 +8,7 @@ import { Suspense, useEffect, useState } from "react";
 import { searchCEP } from "@/utils/searchCep";
 import { Header, Nav } from '@/modules/authentication/components';
 import { Select, PassCheck } from '@/components/';
-import { gender, initialStateFormAthleteStep3 } from "@/constants/registration";
+import { gender, initialStateFormAthleteStep3, typesOfNationality } from "@/constants/registration";
 import InputMask from 'react-input-mask';
 import { phoneFormat } from "@/utils/fields";
 import { Toast } from "@/utils/toast";
@@ -22,12 +22,12 @@ import { AuthService } from "@/services/auth";
 const Step3ClubFederation = ({ data }: { data: any }) => {
     const [loading, setLoading] = useState<boolean>(false);
     const [selectedGender, setSelectedGender] = useState<any>();
+    const [selectedNationality, setSelectedNationality] = useState<any>(null);
     const [selectedGenderlegalGuardian, setSelectedGenderLegalGuardian] = useState<any>();
     const [showPassword, setShowPassword] = useState(false);
     const [showPasswordConfirm, setShowPasswordConfirm] = useState(false);
     const [showAddress, setShowAddress] = useState(false);
     const [form, setForm] = useState(initialStateFormAthleteStep3);
-
 
     async function handleCEPSearch(cep: string) {
         setForm(prev => ({
@@ -81,16 +81,11 @@ const Step3ClubFederation = ({ data }: { data: any }) => {
 
                 Toast.error(value.toString());
             }
-
-
-
-
         }
     }
 
 
     const payload = (data: any): AthleteUser | any => {
-
         if (data?.pj.length) {
             return {
                 email: data.email,
@@ -100,7 +95,7 @@ const Step3ClubFederation = ({ data }: { data: any }) => {
                 phone: phoneFormat(data.tel),
                 document: data.documentCompanyId.replace(/\D/g, ""),
                 address: {
-                    zipCode: data.postalCode,
+                    postalCode: data.postalCode,
                     street: data.address,
                     number: data.number,
                     complement: data.complement || null,
@@ -131,7 +126,7 @@ const Step3ClubFederation = ({ data }: { data: any }) => {
             phone: phoneFormat(data.tel),
             document: data.documentCompanyId.replace(/\D/g, ""),
             address: {
-                zipCode: data.postalCode,
+                postalCode: data.postalCode,
                 street: data.address,
                 number: data.number,
                 complement: data.complement || null,
@@ -279,14 +274,14 @@ const Step3ClubFederation = ({ data }: { data: any }) => {
                                                     <div className="grid grid-cols-1 gap-x-6 gap-y-8 sm:grid-cols-6 pb-[24px]">
                                                         <div className="sm:col-span-3">
                                                             <label htmlFor="documentIdNumber" className="hidden block text-sm font-medium leading-6 text-gray-900">
-                                                                Insc. Estadual
+                                                                Insc. Estadual *
                                                             </label>
                                                             <div>
                                                                 <input
                                                                     type="text"
                                                                     name="documentIdNumber"
                                                                     id="documentIdNumber"
-                                                                    placeholder="Insc. Estadual"
+                                                                    placeholder="Insc. Estadual *"
                                                                     autoComplete="documentIdNumber"
                                                                     onChange={formik.handleChange}
                                                                     onBlur={formik.handleBlur}
@@ -410,6 +405,9 @@ const Step3ClubFederation = ({ data }: { data: any }) => {
 
                                                 <div>
                                                     <h2 className="not-italic font-normal text-base leading-[150%] text-[#EEEEEE] pb-7">Responsável Legal</h2>
+                                                    <div className="child col-span-full pb-[24px] ">
+                                                        <Select items={typesOfNationality} id="legalGuardian.nationality" data={{ selected: selectedNationality, setSelected: setSelectedNationality }} />
+                                                    </div>
                                                     <div className="col-span-full pb-[24px]">
                                                         <label htmlFor="legalGuardian.name" className="hidden block text-sm font-medium leading-6 text-gray-900">
                                                             Nome completo *
@@ -478,7 +476,6 @@ const Step3ClubFederation = ({ data }: { data: any }) => {
                                                                 placeholder="E-mail *"
                                                             />
                                                         </div>
-
                                                     </div>
 
 
