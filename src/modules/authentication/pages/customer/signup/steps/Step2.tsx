@@ -107,7 +107,7 @@ const Step2 = ({ data }: { data: any }) => {
             gender: selectedGender?.name || "",
             hasCryptoWallet: selectedCrypto.id === 1 ? true : false,
             address: {
-                zipCode: data.postalCode,
+                postalCode: data.postalCode,
                 street: data.address,
                 number: data.number,
                 complement: data.complement || null,

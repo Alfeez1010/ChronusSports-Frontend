@@ -21,7 +21,7 @@ const RegisterType = ({ data }: { data: any }) => {
         <div>
             <h2 className='not-italic font-bold text-xl leading-[150%] text-[#EEEEEE] pb-10'>ESCOLHA O TIPO DE REGISTRO</h2>
             <ul className={`flex w-full  items-center flex-wrap flex-row ${data?.types?.length > 2 ? 'justify-center lg:justify-between' : ''}`}>
-                {data?.types?.map((type: Types, index: any) => <ul key={index}><Item type={type} id={type.id}/></ul>)}
+                {data?.types?.map((type: Types, index: any) => <ul key={index}><Item type={type}/></ul>)}
             </ul>
         </div>
     </>;
