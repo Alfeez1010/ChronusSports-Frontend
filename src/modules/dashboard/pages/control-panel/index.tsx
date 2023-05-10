@@ -9,7 +9,7 @@ const ControlPanelPage = () => {
     return <>
         <div className="bg-[#0D0035]">
             <Header />
-            <div className="flex bg-[#0D102D] p-8">
+            <div>
                 <MenuAside />
                 <Container>
                     <PainelDeControle />
