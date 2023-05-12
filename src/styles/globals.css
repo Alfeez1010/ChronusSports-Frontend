@@ -8,11 +8,11 @@
     --primary-color: #0D102D;
 }
 
-body{
+body {
     background-color: rgb(13, 0, 53);
 }
 
-img{
+img {
     max-width: fit-content;
 }
 
@@ -23,6 +23,13 @@ div::-webkit-scrollbar {
     height: 12px;
     /* altura da barra de rolagem */
 }
+
+/* div::-webkit-scrollbar {
+    width: 12px;
+    /* largura da barra de rolagem */
+    height: 12px;
+    /* altura da barra de rolagem */
+} */
 
 /* define a cor da barra de rolagem */
 div::-webkit-scrollbar-track {
