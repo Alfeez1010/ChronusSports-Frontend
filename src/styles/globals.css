@@ -3,16 +3,22 @@
 @tailwind utilities;
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@200;400;600;700;800;900&display=swap');
 
+@import "components/sidebar";
+@import "components/geral";
+@import "components/reset";
+@import "components/configuracoes";
+@import "components/single-card-jogador";
+@import "components/single-jogador";
 
 :root {
     --primary-color: #0D102D;
 }
 
-body {
+body{
     background-color: rgb(13, 0, 53);
 }
 
-img {
+img{
     max-width: fit-content;
 }
 
@@ -23,13 +29,6 @@ div::-webkit-scrollbar {
     height: 12px;
     /* altura da barra de rolagem */
 }
-
-/* div::-webkit-scrollbar {
-    width: 12px;
-    /* largura da barra de rolagem */
-    height: 12px;
-    /* altura da barra de rolagem */
-} */
 
 /* define a cor da barra de rolagem */
 div::-webkit-scrollbar-track {

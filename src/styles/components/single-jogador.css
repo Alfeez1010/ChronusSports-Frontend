@@ -1,0 +1,149 @@
+.valida-chronus-sports span {
+    font-weight: 700;
+    font-size: 14px;
+    color: #428AF8;
+}
+
+.header-nome-jogador h2 {
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 42px;
+    color: #EEEEEE;
+    margin-bottom: 5px;
+}
+
+.header-nome-jogador p {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    color: #A1A2B3;
+}
+
+.header-preco-jogador p {
+    font-weight: 900;
+    font-size: 38px;
+    text-align: right;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: #4ADF3A;
+}
+
+.texto-sobre-jogador p {
+    font-weight: 400;
+    font-size: 16px;
+    color: #A1A2B3;
+}
+
+.role-dono {
+    font-weight: 400;
+    font-size: 14px;
+    color: #FFFFFF;
+}
+
+.verificado-dono a {
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 14px;
+    color: #428AF8;
+}
+
+
+
+
+
+
+.sobre-jogador {
+    background: #0D0035;
+    display: flex;
+    /* max-width: 1200px;
+    height: 750px; */
+    margin: auto;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.content-sobre-jogador {
+    display: flex;
+    flex-direction: column;
+    width: 600px;
+    height: 650px;
+}
+
+.donos-jogador {
+    display: flex;
+    align-items: center;
+    margin-bottom: 25px;
+    justify-content: space-between;
+}
+
+.verificado-dono {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.header-sobre-jogador {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+
+.valida-chronus-sports {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-bottom: 12px;
+}
+
+.img-sobre-jogador {
+    width: 280px;
+    height: 620px;
+    margin:10px
+}
+
+.img-sobre-jogador img {
+    width: 100%;
+    max-width: 100%;
+    object-fit: cover;
+    margin-top: 30px;
+}
+
+.texto-sobre-jogador {
+    margin-bottom: 25px;
+}
+
+.quantificador {
+    margin-bottom: 25px;
+}
+
+.quantificador button {
+    font-weight: 700;
+    font-size: 16px;
+    text-align: center;
+    color: #EEEEEE;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 16px 60px;
+    gap: 10px;
+    width: 204px;
+    height: 56px;
+    background: linear-gradient(322.68deg, #803EB4 36.47%, #4F25CC 92.31%);
+    border-radius: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.quantidade {
+    margin-bottom: 25px;
+}
+
+.quantidade p {
+    font-weight: 700;
+    font-size: 14px;
+    color: #FFFFFF;
+}

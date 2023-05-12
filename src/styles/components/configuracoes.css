@@ -1,0 +1,21 @@
+:root {
+    font-size: 62.5%;
+
+    --azul-claro: #00E4FF;
+        
+}
+
+body {
+    font-size: 1.6rem;
+}
+
+h1, h2, h3, h4, h5, a, p, span, ul, li {
+    font-family: 'Inter', sans-serif;
+}
+
+.font-outfit {
+    font-family: 'Outfit', sans-serif;
+}
+.font-inter {
+    font-family: 'Inter', sans-serif;
+}

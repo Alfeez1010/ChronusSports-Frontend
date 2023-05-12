@@ -1,0 +1,133 @@
+.card-mkt-place {
+    background: #211546;
+    width: 260px;
+    padding: 10px;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.info-card-mkt {
+    width: 100%;
+}
+
+.card-mkt-place img {
+    width: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.btn-mkt>button:nth-child(1) {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0px;
+    gap: 10px;
+    width: 139.93px;
+    /* height: 50px; */
+    background: linear-gradient(322.68deg, #803EB4 36.47%, #4F25CC 92.31%);
+    border-radius: 16px;
+    border: none;
+    color: white;
+    font-weight: 700;
+    font-size: 13px;
+}
+
+.btn-mkt>button:nth-child(2) {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0px;
+    background-color: none;
+    background: none;
+    width: 139.93px;
+    /* height: 50px; */
+    border: 1px solid #783AB8;
+    border-radius: 16px;
+    color: white;
+    font-weight: 700;
+    font-size: 13px;
+}
+
+.btn-mkt {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.textos-card-mkt h3 {
+    font-weight: 700;
+    font-size: 15px;
+    color: white;
+}
+
+.textos-card-mkt h4 {
+    font-weight: 700;
+    font-size: 11px;
+    line-height: 15px;
+    color: #DD851D;
+}
+
+.textos-card-mkt span {
+    font-weight: 400;
+    font-size: 12px;
+    color: #CBC8D3;
+}
+
+.qtd-info-card p {
+    font-weight: 400;
+    font-size: 12px;
+    color: #A3A3A3;
+}
+
+.preco-info-card p {
+    font-weight: 400;
+    font-size: 12px;
+    color: #4ADF3A;
+    text-align: right;
+}
+
+.preco-info-card h4 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    text-align: right;
+    color: #4ADF3A;
+}
+
+.numeros-info-card {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+.textos-card-mkt {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    width: 100%;
+}
+
+.preco-info-card {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+
+.toast-cart {
+    color: black;
+    background-color: #4ADF3A;
+    border-radius: 8px;
+    padding: 12px 20px;
+    font-size: 16px;
+    font-weight: 700;
+    text-align: center;
+    width: 500px
+}
