@@ -133,19 +133,18 @@
     margin-right: 8px;
 }
 
-.container{
+.container {
     display: flex;
     justify-content: space-between;
     width: 50vw;
 }
 
-.container_right{
+.container_right {
     display: flex;
 }
 
 
-.main{
+.main {
     display: flex;
     justify-content: space-between;
 }
-
