@@ -1,18 +1,17 @@
-'use client'
-import AuthenticationLayout from '@/components/layout/authentication';
+'use client';
+import AuthenticationLayout from '@/components/layout/authenticationTwo';
 import RecoveryPassword from '@/modules/authentication/pages/recoveryPassword';
-
 
 import { NextPage } from 'next';
 
 const Authentication: NextPage = () => {
-
-    return <>
-
-        <AuthenticationLayout>
-            <RecoveryPassword />
-        </AuthenticationLayout>
+  return (
+    <>
+      <AuthenticationLayout>
+        <RecoveryPassword />
+      </AuthenticationLayout>
     </>
-}
+  );
+};
 
 export default Authentication;

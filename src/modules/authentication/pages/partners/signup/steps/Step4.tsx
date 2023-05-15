@@ -8,7 +8,7 @@ import { useEffect } from "react";
 const Step4 = () => {
 
     return <>
-        <div>
+      <div className="h-screen overflow-y-auto">
             <Header title="CADASTRO REALIZADO COM SUCESSO!" description="Tudo pronto! Agora é só acessar o seu e-mail para confirmar o seu cadastro e ter acesso à todas as funcionalidades do Portal CHRONUS Sports." />
 
             <div className="mx-auto w-full max-w-sm lg:w-96">

@@ -239,7 +239,7 @@ const Step3Athlete = ({ data }: { data: any }) => {
 
     return <>
         <Suspense fallback={<>Loading</>}>
-            <div>
+        <div className="h-screen overflow-y-auto">
                 <div className="lg:max-w-[430px] m-auto lg:ml-[5px]">
                     <Header title="REGISTRAR NOVO ATLETA" description="Verifique qual perfil é o seu e realize o cadastro para ter acesso a todas as funções e benefícios do CHRONUS Sports" />
                     <Nav isRegistration={true} />

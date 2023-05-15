@@ -10,7 +10,7 @@ type Props = {
   children?: ReactNode;
 };
 
-const Authentication = ({ aside, children }: Props) => {
+const AuthenticationTwo = ({ aside, children }: Props) => {
   return (
     <>
       <div className="fixed inset-0 flex h-screen bg-[#0D102D]">
@@ -26,7 +26,7 @@ const Authentication = ({ aside, children }: Props) => {
           <Footer />
         </div>
 
-        <div className="flex flex-1 px-0 flex-col justify-start  bg-[#0e102e] py-0 sm:px-6 lg:flex-none max-w-screen min-h-screen m-auto">
+        <div className="flex flex-1 px-0 flex-col justify-start  bg-[#0e102e] py-0 sm:px-6 lg:flex-none max-w-screen min-h-screen m-auto mt-auto">
           <div
             className={`${styles.headerMobile} sm:hidden h-[180px] bg-[#131A4D] flex items-center justify-center relative`}
           >
@@ -51,4 +51,4 @@ const Authentication = ({ aside, children }: Props) => {
   );
 };
 
-export default Authentication;
+export default AuthenticationTwo;

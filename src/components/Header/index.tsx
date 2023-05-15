@@ -201,7 +201,7 @@ const Header = () => {
               className="lg:mr-[32px]"
             />
 
-            <form className="relative search-header hidden 2xl:flex">
+            <form className="relative search-header hidden xl:flex">
               <label htmlFor="email-address" className="sr-only">
                 Search
               </label>
@@ -256,7 +256,7 @@ const Header = () => {
           <div className="flex ">
             <div>
               <Popover.Group className="flex items-center w-max gap-5">
-                <div className="hidden xl:flex gap-1">
+                <div className="hidden lg:flex gap-1">
                   <a
                     href="#"
                     className="not-italic font-normal text-base leading-[150%] flex items-center text-center text-white xl:px-[14px]"
