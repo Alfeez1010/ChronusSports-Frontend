@@ -165,10 +165,11 @@ const SignIn = () => {
                     <a href="#" className="inline-flex w-full justify-center">
                       <span className="sr-only">Sign in with Instagram</span>
                       <Image
-                        src="/assets/images/icoAuthSsoInstagram.svg"
+                        className="py-[6px] px-4 border rounded-xl border-1 border-[#164092] border-solid "
+                        src="/assets/images/apple.svg"
                         alt=""
-                        width={70}
-                        height={52}
+                        width={62}
+                        height={48}
                       />
                     </a>
                   </div>

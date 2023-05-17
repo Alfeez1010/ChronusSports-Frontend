@@ -11,6 +11,7 @@ const navigation = {
     { name: 'CHRONUS Sports Marketplace Primary', href: '#' },
     { name: 'CHRONUS Sports Marketplace Secondary', href: '#' },
     { name: 'CHRONUS Sports Social', href: '#' },
+    { name: 'CHRONUS VR ', href: '/'},
   ],
   institutional: [
     { name: 'Sobre', href: '#' },
@@ -146,7 +147,7 @@ const FooterClub = () => {
                   <h3 className="not-italic font-[400] text-[15px] leading-[150%] uppercase text-[#00E4FF]">
                     NAVEGAR
                   </h3>
-                  {/* <ul role="list" className="mt-6 space-y-4">
+                  <ul role="list" className="mt-6 space-y-4">
                     {navigation.browser.map((item) => (
                       <li key={item.name}>
                         <a
@@ -161,8 +162,8 @@ const FooterClub = () => {
                         </a>
                       </li>
                     ))}
-                  </ul>{' '} */}
-                  <ul role="list" className="mt-6 space-y-4">
+                  </ul>{' '}
+                  {/* <ul role="list" className="mt-6 space-y-4">
                       <li >
                         <a
                           href=''
@@ -173,7 +174,7 @@ const FooterClub = () => {
                           MKT Place
                         </a>
                       </li>
-                  </ul>
+                  </ul> */}
                 </div>
               </div>
               <div className="">

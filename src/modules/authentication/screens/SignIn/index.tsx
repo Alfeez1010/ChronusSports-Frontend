@@ -76,7 +76,7 @@ const SignIn = () => {
                                         <span className="sr-only">Sign in with Instagram</span>
                                         <a href="#" className="inline-flex w-full justify-center">
                                             <span className="sr-only">Sign in with Instagram</span>
-                                            <Image src="/assets/images/icoAuthSsoInstagram.svg" alt=""
+                                            <Image src="/assets/images/icoAuthSsoInstagram.svg" alt="" 
                                                 width={90}
                                                 height={72} />
 

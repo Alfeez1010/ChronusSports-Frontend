@@ -64,7 +64,7 @@ const RecoveryPassword = () => {
           description="Insira o seu email e enviaremos um link para você voltar a acessar a sua conta."
         />
 
-        <div className="mx-auto w-full max-w-sm lg:w-96 pt-[19px]">
+        <div className="mx-auto w-full max-w-sm lg:w-96 ">
           <div className="mt-8">
             <div className="mb-6">
               <form onSubmit={formik.handleSubmit}>

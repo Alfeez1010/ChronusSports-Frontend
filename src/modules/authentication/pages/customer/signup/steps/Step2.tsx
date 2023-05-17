@@ -307,7 +307,7 @@ const Step2 = ({ data }: { data: any }) => {
                         </label>
                         <div>
                           <InputMask
-                            mask="(099) 9 9999 9999"
+                            mask="+99 (099) 9 9999 9999"
                             type="tel"
                             name="tel"
                             id="tel"
