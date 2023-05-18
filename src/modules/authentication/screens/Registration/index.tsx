@@ -166,7 +166,7 @@ const Registration = () => {
                           type="tel"
                           name="phone"
                           id="phone"
-                          placeholder="Telefone"
+                          placeholder="Telefone *"
                           autoComplete="tel"
                           className="text-[#A3A3A3] block max-h-12 px-4 py-3 w-full bg-[#ffffff00] outline-0 border-0 py-1.5  ring-1 ring-inset placeholder:text-gray-400 sm:text-sm sm:leading-6 rounded-[16px_px] border-2 border-solid border-[#131740] rounded-2xl"
                         />

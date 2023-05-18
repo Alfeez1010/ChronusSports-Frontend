@@ -28,9 +28,9 @@ import { AuthService } from '@/services/auth';
 
 const Step3Athlete = ({ data }: { data: any }) => {
   const [loading, setLoading] = useState<boolean>(false);
-  const [selectedGender, setSelectedGender] = useState<any>({});
+  const [selectedGender, setSelectedGender] = useState<any>();
   const [selectedGenderlegalGuardian, setSelectedGenderLegalGuardian] =
-    useState<any>({} as any);
+    useState<any>();
   const [showPassword, setShowPassword] = useState(false);
   const [showPasswordConfirm, setShowPasswordConfirm] = useState(false);
   const [showAddress, setShowAddress] = useState(false);
@@ -470,7 +470,7 @@ const Step3Athlete = ({ data }: { data: any }) => {
                                     type="tel"
                                     name="tel"
                                     id="tel"
-                                    placeholder="Telefone"
+                                    placeholder="Telefone *"
                                     autoComplete="tel"
                                     onChange={formik.handleChange}
                                     onBlur={formik.handleBlur}

@@ -311,7 +311,7 @@ const Step2 = ({ data }: { data: any }) => {
                             type="tel"
                             name="tel"
                             id="tel"
-                            placeholder="Telefone"
+                            placeholder="Telefone *"
                             autoComplete="tel"
                             onChange={formik.handleChange}
                             onBlur={formik.handleBlur}
