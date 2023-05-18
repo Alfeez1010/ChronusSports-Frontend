@@ -1,5 +1,4 @@
 import Header from "@/modules/authentication/components/header";
-import { Toast } from "@/utils/toast";
 import Image from "next/image";
 import Link from "next/link";
 import { useEffect } from "react";
